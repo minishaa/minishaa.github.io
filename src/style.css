@@ -1,6 +1,7 @@
 html, body {
     height: 100%;
     overflow-y: scroll;
+    overflow: hidden;
   }
 
 .user-select-none {
@@ -10,9 +11,7 @@ html, body {
 @keyframes verticalMove {
     0% { transform: translateX(25vw) translateY(0vh); }
     10% { transform: translateX(0vw) translateY(0vh); }
-    80% { transform: translateX(0vw) translateY(70vh); }
-    100% { transform: translateX(10vw) translateY(70vh); }
-
+    100% { transform: translateX(0vw) translateY(100vh); }
 }
 
 @keyframes SearchlMove {
