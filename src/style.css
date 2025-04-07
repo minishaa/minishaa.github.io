@@ -1,0 +1,330 @@
+html, body {
+    height: 100%;
+    overflow-y: scroll;
+  }
+
+.user-select-none {
+    user-select: none;
+}
+
+@keyframes verticalMove {
+    0% { transform: translateX(25vw) translateY(0vh); }
+    10% { transform: translateX(0vw) translateY(0vh); }
+    80% { transform: translateX(0vw) translateY(70vh); }
+    100% { transform: translateX(10vw) translateY(70vh); }
+
+}
+
+@keyframes SearchlMove {
+    0% { transform: translateX(30vw) translateY(0vh); }
+    20% { transform: translateX(40vw) translateY(0vh); }
+    50% { transform: translateX(50vw) translateY(18vh); }
+    100% { transform: translateX(100vw) translateY(18vh); }
+}
+
+.background span.left-mover {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0; 
+    width: 30vmin;
+    height: 30vmin; 
+    border-radius: 50%;
+    background-color: white;
+    animation: verticalMove 4s linear infinite;
+    color: white;
+    filter : blur(30px)
+}
+
+
+.background span.search-mover {
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30vmin;
+    height: 30vmin; 
+    border-radius: 50%;
+    background-color: white;
+    animation: SearchlMove 4s linear infinite;
+    color: white;
+    filter : blur(30px)
+}
+
+
+.content-all{
+    overflow-y: scroll;
+    position: fixed;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    clip-path: polygon(100% 32%, 95% 20%, 63% 20%, 50% 0, 0 0, 0 20%, 4% 33%, 4% 53%, 0 64%, 0 88%, 7% 100%, 100% 100%);
+}
+
+.content-searchbar{
+    overflow-y: scroll;
+    z-index: 0;
+    position: fixed ;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #111111;
+    clip-path: polygon(51% 0, 63% 19%, 100% 19%, 100% 0);
+}
+
+
+@media (max-width: 600px) {
+    .polygon {
+        width: 100%; 
+    }
+    .searchbar {
+        width: 100%; 
+    }
+}
+
+.content-navbar {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    position: relative;
+    left: 4%;
+    width: 46%;
+    height: 20%; 
+}
+
+.content-navbar ul {
+    display: flex;
+    width: 100%; 
+    padding: 0;
+    margin: 0;
+    justify-content: space-between; 
+}
+
+
+.jetbrains-mono-nav {
+    font-family: "JetBrains Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+.plan {
+    position: relative;
+    width: 91%;
+    height: 75%;
+    background-color: transparent;
+    left: 4%;
+}
+
+
+.plancalculatrice {
+    position: relative; 
+    width: 43%;
+    height: 42%;
+    background-color: transparent;
+    top: 5%;
+    left: 4%;
+}
+
+
+.plancv{ 
+    position: absolute;     
+    width: 43%;
+    height: 42%;
+    background-color: transparent;
+    top: 5%;
+    right: 4%;
+}
+
+.planquestionnaire{ 
+    position: absolute;
+    width: 43%;
+    height: 42%;
+    background-color: transparent;
+    bottom: 5%;
+    right: 4%;
+}
+
+.planbruteforce{ 
+    position: absolute;
+    width: 43%;
+    height: 42%;
+    background-color: transparent;
+    bottom: 5%;
+    left: 4%;
+}
+
+
+
+
+.btn2 {
+    padding: 10px 20px;
+    font-size: 14px;
+    min-width: 150px;
+    text-align: center;
+}
+
+
+
+.btn2::before,
+.btn2::after {
+    content: '';
+    position: absolute;
+    box-sizing: border-box;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.btn2::before {
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid white;
+    border-left: 1px solid white;
+}
+
+.btn2::after {
+    bottom: 0;
+    right: 0;
+    width: 10px;
+    height: 10px;
+    border-bottom: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.btn2:hover::before,
+.btn2:hover::after {
+    width: calc(100%); 
+    height: calc(100%);
+}
+
+.btn2:hover {
+    transition-delay: 0.5s;
+    color: white;
+    box-shadow: 0 0 1px white, 0 0 3px white, 0 0 6px white;
+}
+
+
+
+.und {
+    position: relative;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.und::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    background: white;
+    transition: width 0.3s;
+    pointer-events: none;
+}
+
+.und:hover::after {
+    width: 100%;
+}
+
+
+.innerbox a {
+    font-size: 20px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+.inner-box {
+    position: relative; /* Ajoute ceci */
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    text-align: left;
+}
+
+
+.button-container {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+
+
+
+.inner-box span {
+    position: absolute;
+    display: block;
+    background: white;
+    transition: all 0.5s ease;
+    pointer-events: none;
+
+}
+
+.inner-box .top {
+    top: 0;
+    left: 0;
+    height: 2px;
+    width: 0%;
+    transition-delay: 0s;
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+
+}
+
+.inner-box .right {
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 0%;
+    transition-delay: 0.4s;
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+
+}
+
+.inner-box .bottom {
+    bottom: 0;
+    right: 0;
+    height: 2px;
+    width: 0%;
+    transition-delay: 0.8s;
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+}
+
+.inner-box .left {
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 0%;
+    transition-delay: 1.2s;
+    box-shadow: 0 0 10px white, 0 0 20px white, 0 0 40px white;
+
+}
+
+.inner-box:hover .top {
+    width: 100%;
+}
+
+.inner-box:hover .right {
+    height: 100%;
+}
+
+.inner-box:hover .bottom {
+    width: 100%;
+}
+
+.inner-box:hover .left {
+    height: 100%;
+}
+
+
