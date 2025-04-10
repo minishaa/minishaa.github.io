@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/style.css">
+    <link rel="stylesheet" href="./src/output.css">
+    <link rel="stylesheet" href="./src/terminal_R1M.css">
+    <link rel="stylesheet" href="./src/terminal_brute_force.css">
+    <link rel="stylesheet" href="./src/terminal_questionnaire.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/terminal_calculatrice.css">
+    <link rel="stylesheet" href="./src/terminal_calculatrice_graphique.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.js" defer></script>  
+
+    
+</head>
+<body>
+
+    <div id="terminal-questionnaire" class="terminal-questionnaire" style="width: 500px; height: 200px;">
+        <div id="terminal-header-questionnaire" class="terminal-header-questionnaire">
+            <span>Terminal</span>
+            <div id="close-btn-questionnaire" class="close-btn-questionnaire">×</div>
+        </div>
+        <div class="terminal-body-questionnaire">
+            <div id="quiz" class="w-full max-w-xl bg-base-100 shadow-xl p-8" style="background-color: #3a3a3a;">
+                <div id="question-container" class="space-y-6">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div id="terminal-BF" class="terminal-BF" style="width: 600px; height: 300px;">
+        <div id="terminal-header-BF" class="terminal-header-BF">
+            <span>Terminal</span>
+            <button id="brute-force-btn" class="btn btn-error mt-4">💥 Brute Force</button>
+            <div id="close-btn-BF" class="close-btn-BF">×</div>
+        </div>
+        <div class="terminal-body-BF">
+            <pre id="brute-force-log" class="text-green-400 text-sm h-40 overflow-auto mt-4 bg-black p-2 rounded" style="background-color: #3a3a3a; height: 250px;"></pre>
+        </div>
+    </div>
+
+
+
+
+    <div id="terminal-R1M" class="terminal-R1M" style="width: 1000px; height: 800px; font-family: monospace;">
+        <div id="terminal-header-R1M" class="terminal-header-R1M">
+            <span>Terminal</span>
+            <div id="close-btn-R1M" class="close-btn-R1M">×</div>
+        </div>
+        <div class="terminal-body-R1M">
+            <div class="w-[1000px] h-[800px] grid grid-rows-2 bg-base-200 rounded-lg shadow-lg">
+                <!-- Rangée 1 -->
+                <div class="grid grid-cols-[300px_400px_300px]">
+                    <div class="bg-primary h-[400px] shadow-md" style="background-color: white; color: black;">
+                        <div style="margin-top: 10px;"></div> 
+                        <gg class="archivo-title" style="padding-left: 25px;">CHÂSSIS</gg>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Cadre</u> : périmétrique Diamond en aluminium</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Réservoir</u> : 17 litres</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Hauteur de selle</u> : 860 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Longueur</u> : 2 055 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Largeur</u> : 690 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Hauteur min</u>  : 1 165 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Empattement</u> : 1 405 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Poids en ordre de marche</u> : 202 kg</p><br>
+
+                        <gg class="archivo-title" style="padding-left: 25px;">TRANSMISSION</gg>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Boite de vitesse</u> : Boîte à 6 rapports , manuelle - shifter de série</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Type</u> : Secondaire par chaîne</p>
+                    </div>
+                  <div class="bg-secondary h-[400px] rounded-lg shadow-md" style="background-color: transparent;">
+
+                    <div class="flex items-center justify-center">
+                            <div class="carousel w-[400px] h-[400px] mx-auto">
+                                <div id="slide1" class="carousel-item relative w-full">
+                                <img src="./src/img/yzf-r1m.jpg" class="w-[400px] h-[400px] object-cover" />
+                                <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                                    <a href="#slide3" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❮</a>
+                                    <a href="#slide2" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❯</a>
+                                </div>
+                                </div>  
+                                <div id="slide2" class="carousel-item relative w-full">
+                                <img src="./src/img/yzf-r1m (1).jpg" class="w-[400px] h-[400px] object-cover" />
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                                        <a href="#slide1" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❮</a>
+                                        <a href="#slide3" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❯</a>
+                                    </div>
+                                </div> 
+                                <div id="slide3" class="carousel-item relative w-full">
+                                    <img src="./src/img/yzf-r1m (2).jpg" class="w-[400px] h-[400px] object-cover" />
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                                        <a href="#slide2" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❮</a>
+                                        <a href="#slide1" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❯</a>
+                                    </div>
+                                </div> 
+                            </div>
+                    </div>
+
+                  </div>
+                  <div class="bg-accent h-[400px] shadow-md" style="background-color: white; color: black;">
+                    <div style="margin-top: 10px;"></div> 
+                    <gg class="archivo-title" style="padding-left: 25px;">TRAIN AVANT</gg> 
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Fourche</u> : téléhydraulique inversée Öhlins Ø 43 mm, déb : 120 mm</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Freinage</u> : 2 disques Ø 320 mm, fixation radiale, étrier 4 pistons</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Roue avant</u> : 120 / 70 - 17 → Commander ce type de pneu</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Pression</u> : 2.5 bars</p><br>
+
+                    <gg class="archivo-title" style="padding-left: 25px;">TRAIN ARRIÈRE</gg>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Mono-amortisseur Öhlins, déb</u> : 120 mm</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Freinage</u> 1 disque Ø 220 mm, étrier simple piston</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Roue arrière</u> : 200 / 55 - 17</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Pression</u> : 2.9 bars</p>
+                        
+                  </div>
+                </div>
+              
+                <!-- Rangée 2 -->
+                <div class="grid grid-cols-[500px_500px]">
+                  <div class="bg-warning h-[400px] shadow-md" style="background-color: white; color: black;">
+
+                    <gg class="archivo-title" style="padding-left: 25px;">MOTEUR</gg>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>4 cylindres en ligne </u>, 4 temps</p>
+                    <p class="archivo-text" style="padding-left: 15px;">Injection</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Refroidissement</u> : liquide</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>2 ACT</u></p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>4 soupapes</u> par cylindre</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>998 cc</u> (Alésage * course: 79 x 50.9 mm)</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>200 ch</u> à 13 500 tr/min</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>11,60 mkg</u> à 11 500 tr/min</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Rapport poids / puissance</u> : environ 0.94 kg/ch</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Rapport poids / couple</u> : environ 16.13 kg/mkg</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Compression</u> : 13 : 1</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Emission CO²</u>: 168 g/km</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Crit'air</u> : 1</p>
+
+                  </div>
+                  <div class="bg-info h-[400px] shadow-md" style="background-color: white; color: black;">
+
+                    <gg class="archivo-title" style="padding-left: 25px;">HISTOIRE</gg>
+                    <p class="archivo-text text-center items-center" style="padding-left: 15px; text-align: justify; padding-right: 20px; font-size: 18px;">La <u>Yamaha R1M</u> est une moto de haute performance inspirée directement de la technologie <u>MotoGP</u>. Elle est équipée d’un moteur <u>4 cylindres</u> en ligne de 998 cm³, offrant une puissance impressionnante et une accélération fulgurante. Ce qui la distingue vraiment, c’est sa panoplie d’électroniques avancées : suspension électronique <u>Öhlins</u>, contrôle de traction, anti-wheeling, et <u>centrale inertielle 6 axes</u> pour une gestion ultra-précise du comportement en virage. Le carénage en fibre de <u>carbone</u> et les aides à la conduite en font une machine aussi performante que sophistiquée. Elle est conçue pour les pilotes exigeants, aussi bien sur piste que sur route.</p>
+
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+    <div class="background">
+        <span class="left-mover"></span> 
+        <span class="search-mover"></span>
+    </div>
+
+
+    
+
+
+    <div class="terminal" id="terminal" style="font-family: monospace;">
+        <div class="terminal-header" id="terminal-header">
+            <span>Calculatrice</span>
+            <div class="close-btn" id="close-btn">×
+                
+            </div>
+        </div>
+    
+        <div class="terminal-body">
+    
+        </div>
+        
+    </div>
+
+
+    
+
+    <div id="terminal-graphe" class="terminal-graphe" style="width: 350px; height: 390px; font-family: monospace;">
+        <div id="terminal-header-graphe" class="terminal-header-graphe">
+            <span>Terminal</span>
+            <div id="close-btn-graphe" class="close-btn-graphe">×</div>
+        </div>
+        <div class="terminal-body-graphe">
+            <!-- Écran de la calculatrice -->
+            <div id="screen" class="screen text-right p-3 text-2xl bg-base-300 rounded mb-5 h-12" style="border: 1px solid #00ff9f; color: #00ff9f; ;"></div>
+            
+            <!-- Grille des boutons -->
+            <div class="buttons-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                <!-- Boutons chiffres et opérateurs -->
+                <button onclick="appendValue('7')" class="btn" style="padding: 10px;">7</button>
+                <button onclick="appendValue('8')" class="btn" style="padding: 10px;">8</button>
+                <button onclick="appendValue('9')" class="btn" style="padding: 10px;">9</button>
+                <button onclick="appendValue('/')" class="btn" style="padding: 10px;">÷</button>
+                <button onclick="appendValue('4')" class="btn" style="padding: 10px;">4</button>
+                <button onclick="appendValue('5')" class="btn" style="padding: 10px;">5</button>
+                <button onclick="appendValue('6')" class="btn" style="padding: 10px;">6</button>
+                <button onclick="appendValue('*')" class="btn" style="padding: 10px;">×</button>
+                <button onclick="appendValue('1')" class="btn" style="padding: 10px;">1</button>
+                <button onclick="appendValue('2')" class="btn" style="padding: 10px;">2</button>
+                <button onclick="appendValue('3')" class="btn" style="padding: 10px;">3</button>
+                <button onclick="appendValue('-')" class="btn" style="padding: 10px;">−</button>
+                <button onclick="appendValue('0')" class="btn" style="padding: 10px;">0</button>
+                <button onclick="appendValue('.')" class="btn" style="padding: 10px;">.</button>
+                <button onclick="clearScreen()" class="btn btn-error" style="padding: 10px;">C</button>
+                <button onclick="appendValue('+')" class="btn" style="padding: 10px;">+</button>
+            </div>
+            
+            <!-- Bouton égal -->
+             <div class="mt-5">
+                <button onclick="calculateResult()" class="btn btn-accent w-full pt-10" style="padding: 10px;">=</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="content-all">
+        <div class="content-navbar">
+                <ul>
+                    <li><a role="tab" class="tab jetbrains-mono-nav und">Calculatrice</a></li>
+                    <li><a role="tab" class="tab jetbrains-mono-nav und">R1M</a></li>
+                    <li><a role="tab" class="tab jetbrains-mono-nav und">Brute Force</a></li>
+                    <li><a role="tab" class="tab jetbrains-mono-nav und">Questionnaire</a></li>
+                </ul>
+        </div>
+
+
+       
+    
+
+
+
+
+        
+
+
+
+        <div class="plan">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 bg-base-200 rounded-lg shadow-lg" style="background-color: transparent;">
+    
+    <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+      <div class="inner-box">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <fg class="jetbrains-mono-nav und">CALCULATRICE</fg>
+        <p class="mt-2">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur veritatis quidem, repudiandae quaerat cum quia vitae quas quibusdam sequi? A molestias reiciendis ipsam laudantium facilis quasi totam ipsum nostrum voluptas perferendis! Vel a labore maiores repellendus exercitationem eos tempore, ipsum nihil debitis deserunt voluptatum earum natus, ex consequuntur odio nobis?
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-10 mt-4">
+            <button class="btn2 tab w-full sm:w-auto" id="open-btn">TERMINALE</button>
+            <button class="btn2 tab w-full sm:w-auto" id="open-btn-graphique">GRAPHIQUE</button>
+        </div>
+          
+        
+      </div>
+    </div>
+
+    <!-- Les autres blocs -->
+    <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+        <div class="inner-box">
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+          <fg class="jetbrains-mono-nav und">R1M</fg>
+          <p class="mt-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur veritatis quidem, repudiandae quaerat cum quia vitae quas quibusdam sequi? A molestias reiciendis ipsam laudantium facilis quasi totam ipsum nostrum voluptas perferendis! Vel a labore maiores repellendus exercitationem eos tempore, ipsum nihil debitis deserunt voluptatum earum natus, ex consequuntur odio nobis?
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-2 mt-4">
+              <button class="btn2 tab w-full sm:w-auto" id="open-btn-R1M">SPÉCIFICITÉS</button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+        <div class="inner-box">
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+          <fg class="jetbrains-mono-nav und">QUESTIONNAIRE</fg>
+          <p class="mt-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur veritatis quidem, repudiandae quaerat cum quia vitae quas quibusdam sequi? A molestias reiciendis ipsam laudantium facilis quasi totam ipsum nostrum voluptas perferendis! Vel a labore maiores repellendus exercitationem eos tempore, ipsum nihil debitis deserunt voluptatum earum natus, ex consequuntur odio nobis?
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-2 mt-4">
+              <button class="btn2 tab w-full sm:w-auto " id="open-btn-questionnaire">RÉPONDRE</button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+        <div class="inner-box">
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+          <fg class="jetbrains-mono-nav und">ALGORITHME BRUTE FORCE</fg>
+          <p class="mt-2">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur veritatis quidem, repudiandae quaerat cum quia vitae quas quibusdam sequi? A molestias reiciendis ipsam laudantium facilis quasi totam ipsum nostrum voluptas perferendis! Vel a labore maiores repellendus exercitationem eos tempore, ipsum nihil debitis deserunt voluptatum earum natus, ex consequuntur odio nobis?
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-2 mt-4">
+              <button class="btn2 tab w-full sm:w-auto" id="open-btn-BF">BRUTE FORCE</button>
+          </div>
+          
+        </div>
+      </div>
+
+  </div>
+</div>
+
+    </div>
+
+    <div class="content-searchbar">
+
+
+    </div>
+
+
+    
+    <script src="src/terminalR1M.js"></script>
+
+    <script src="./src/terminalgraphiquecalculatrice.js"></script>
+
+    <script src="./src/terminalcalculatrice.js"></script>
+
+    <script src="./src/terminalbruteforce.js"></script>
+
+    <script src="./src/terminalquestionnaire.js"></script>
+
+    <script src="./src/script_bruteforce.js"></script>
+
+    <script src="./src/questionnaire.js"></script>
+
+
+
+
+
+
+</body>
+</html>
+
+<!--
+
+<div class="plancalculatrice">
+                <div class="inner-box">
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <fg class="jetbrains-mono-nav und">CALCULATRICE</fg>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut consequuntur aliquam doloremque ad officia, impedit maiores, est totam ipsum aperiam accusantium corporis laudantium nihil odit. Tempore eius quam vero iure quidem, itaque a amet iste assumenda dolorem, reiciendis, nisi enim quibusdam dolore ducimus! Tempore nihil obcaecati eveniet explicabo esse voluptate?</p>
+                    <div class="button-container">
+                        <button class="btn2 tab" id="open-btn">CALCULATRICE TERMINALE</button>
+                        <button class="btn2 tab" id="open-btn-graphique">CALCULATRICE GRAPHIQUE</button>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="plancv">
+                <div class="inner-box">
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <fg class="jetbrains-mono-nav und">R1M</fg>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut consequuntur aliquam doloremque ad officia, impedit maiores, est totam ipsum aperiam accusantium corporis laudantium nihil odit. Tempore eius quam vero iure quidem, itaque a amet iste assumenda dolorem, reiciendis, nisi enim quibusdam dolore ducimus! Tempore nihil obcaecati eveniet explicabo esse voluptate?</p>
+                    <div class="button-container">
+                        <button class="btn2 tab">SPÉCIFICITÉS</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="planquestionnaire">
+                <div class="inner-box">
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <fg class="jetbrains-mono-nav und">QUESTIONNAIRE</fg>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut consequuntur aliquam doloremque ad officia, impedit maiores, est totam ipsum aperiam accusantium corporis laudantium nihil odit. Tempore eius quam vero iure quidem, itaque a amet iste assumenda dolorem, reiciendis, nisi enim quibusdam dolore ducimus! Tempore nihil obcaecati eveniet explicabo esse voluptate?</p>
+                    <div class="button-container">
+                        <button class="btn2 tab">RÉPONDRE</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="planbruteforce">
+                <div class="inner-box">
+                    <span class="top"></span>
+                    <span class="right"></span>
+                    <span class="bottom"></span>
+                    <span class="left"></span>
+                    <fg class="jetbrains-mono-nav und">ALGORITHME BRUTE FORCE</fg>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut consequuntur aliquam doloremque ad officia, impedit maiores, est totam ipsum aperiam accusantium corporis laudantium nihil odit. Tempore eius quam vero iure quidem, itaque a amet iste assumenda dolorem, reiciendis, nisi enim quibusdam dolore ducimus! Tempore nihil obcaecati eveniet explicabo esse voluptate?</p>
+                    <div class="button-container">
+                        <button class="btn2 tab">BRUTE FORCE</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+-->

@@ -1,0 +1,43 @@
+.terminal-R1M {
+    z-index: 1000;
+    width: 50%;
+    height: 50%;
+    background: white;
+    color: #00ff9f;
+    border-radius: 10px;
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    display: none; /* Commence en état caché */
+}
+
+.terminal-header-R1M {
+    background: #3a3a3a;
+    color: white;
+    padding: 8px;
+    cursor: grab;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    user-select: none;
+}
+
+.close-btn-R1M {
+    background: #ff4d4d;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+
+.close-btn-R1M:hover {
+    background: #ff1a1a;
+}
