@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/terminal_R1M.css">
+    <link rel="stylesheet" href="./src/css/terminal_brute_force.css">
+    <link rel="stylesheet" href="./src/css/terminal_questionnaire.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./src/css/terminal_calculatrice.css">
+    <link rel="stylesheet" href="./src/css/terminal_calculatrice_graphique.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@latest/dist/full.js" defer></script>  
+
+    
+</head>
+<body>
+
+
+    <div id="terminal-questionnaire" class="terminal-questionnaire" style="width: 500px; height: 200px; font-family: monospace;">
+        <div id="terminal-header-questionnaire" class="terminal-header-questionnaire">
+            <span>Terminal</span>
+            <div id="close-btn-questionnaire" class="close-btn-questionnaire">×</div>
+        </div>
+        <div class="terminal-body-questionnaire">
+            <div id="quiz" class="w-full max-w-xl bg-base-100 shadow-xl p-8" style="background-color: #3a3a3a;">
+                <div id="question-container" class="space-y-6">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    <div id="terminal-BF" class="terminal-BF" style="width: 600px; height: 320px; font-family: monospace;">
+        <div id="terminal-header-BF" class="terminal-header-BF">
+            <span>Terminal</span>
+            <div id="close-btn-BF" class="close-btn-BF">×</div>
+        </div>
+        <div class="terminal-body-BF">
+            <div class="flex flex-col sm:flex-row justify-center gap-2 mt-4">
+                <button class="bfb" id="brute-force-btn">💥 BRUTE FORCE 💥</button>
+            </div>  
+            <pre id="brute-force-log" class="text-green-400 text-sm h-40 overflow-auto mt-4 bg-black p-2 rounded" style="background-color: #3a3a3a; height: 250px;"></pre>
+        </div>
+    </div>
+
+
+
+
+    <div id="terminal-R1M" class="terminal-R1M" style="width: 1000px; height: 800px; font-family: monospace;">
+        <div id="terminal-header-R1M" class="terminal-header-R1M">
+            <span>Terminal</span>
+            <div id="close-btn-R1M" class="close-btn-R1M">×</div>
+        </div>
+        <div class="terminal-body-R1M">
+            <div class="w-[1000px] h-[800px] grid grid-rows-2 bg-base-200 rounded-lg shadow-lg">
+                <div class="grid grid-cols-[300px_400px_300px]">
+                    <div class="bg-primary h-[400px] shadow-md" style="background-color: white; color: black;">
+                        <div style="margin-top: 10px;"></div> 
+                        <gg class="archivo-title" style="padding-left: 25px;">CHÂSSIS</gg>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Cadre</u> : périmétrique Diamond en aluminium</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Réservoir</u> : 17 litres</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Hauteur de selle</u> : 860 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Longueur</u> : 2 055 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Largeur</u> : 690 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Hauteur min</u>  : 1 165 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Empattement</u> : 1 405 mm</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Poids en ordre de marche</u> : 202 kg</p><br>
+
+                        <gg class="archivo-title" style="padding-left: 25px;">TRANSMISSION</gg>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Boite de vitesse</u> : Boîte à 6 rapports , manuelle - shifter de série</p>
+                        <p class="archivo-text" style="padding-left: 15px;"><u>Type</u> : Secondaire par chaîne</p>
+                    </div>
+                  <div class="bg-secondary h-[400px] rounded-lg shadow-md" style="background-color: transparent;">
+
+                    <div class="flex items-center justify-center">
+                            <div class="carousel w-[400px] h-[400px] mx-auto">
+                                <div id="slide1" class="carousel-item relative w-full">
+                                <img src="./src/img/yzf-r1m.jpg" class="w-[400px] h-[400px] object-cover" />
+                                <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                                    <a href="#slide3" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❮</a>
+                                    <a href="#slide2" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❯</a>
+                                </div>
+                                </div>  
+                                <div id="slide2" class="carousel-item relative w-full">
+                                <img src="./src/img/yzf-r1m (1).jpg" class="w-[400px] h-[400px] object-cover" />
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                                        <a href="#slide1" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❮</a>
+                                        <a href="#slide3" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❯</a>
+                                    </div>
+                                </div> 
+                                <div id="slide3" class="carousel-item relative w-full">
+                                    <img src="./src/img/yzf-r1m (2).jpg" class="w-[400px] h-[400px] object-cover" />
+                                    <div class="absolute flex justify-between transform -translate-y-1/2 left-2 right-2 top-1/2">
+                                        <a href="#slide2" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❮</a>
+                                        <a href="#slide1" class="btn btn-ghost" style="background-color: transparent; border: none; opacity: 0.8; color: black;">❯</a>
+                                    </div>
+                                </div> 
+                            </div>
+                    </div>
+
+                  </div>
+                  <div class="bg-accent h-[400px] shadow-md" style="background-color: white; color: black;">
+                    <div style="margin-top: 10px;"></div> 
+                    <gg class="archivo-title" style="padding-left: 25px;">TRAIN AVANT</gg> 
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Fourche</u> : téléhydraulique inversée Öhlins Ø 43 mm, déb : 120 mm</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Freinage</u> : 2 disques Ø 320 mm, fixation radiale, étrier 4 pistons</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Roue avant</u> : 120 / 70 - 17 → Commander ce type de pneu</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Pression</u> : 2.5 bars</p><br>
+
+                    <gg class="archivo-title" style="padding-left: 25px;">TRAIN ARRIÈRE</gg>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Mono-amortisseur Öhlins, déb</u> : 120 mm</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Freinage</u> 1 disque Ø 220 mm, étrier simple piston</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Roue arrière</u> : 200 / 55 - 17</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Pression</u> : 2.9 bars</p>
+                        
+                  </div>
+                </div>
+              
+                <div class="grid grid-cols-[500px_500px]">
+                  <div class="bg-warning h-[400px] shadow-md" style="background-color: white; color: black;">
+
+                    <gg class="archivo-title" style="padding-left: 25px;">MOTEUR</gg>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>4 cylindres en ligne </u>, 4 temps</p>
+                    <p class="archivo-text" style="padding-left: 15px;">Injection</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Refroidissement</u> : liquide</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>2 ACT</u></p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>4 soupapes</u> par cylindre</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>998 cc</u> (Alésage * course: 79 x 50.9 mm)</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>200 ch</u> à 13 500 tr/min</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>11,60 mkg</u> à 11 500 tr/min</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Rapport poids / puissance</u> : environ 0.94 kg/ch</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Rapport poids / couple</u> : environ 16.13 kg/mkg</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Compression</u> : 13 : 1</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Emission CO²</u>: 168 g/km</p>
+                    <p class="archivo-text" style="padding-left: 15px;"><u>Crit'air</u> : 1</p>
+
+                  </div>
+                  <div class="bg-info h-[400px] shadow-md" style="background-color: white; color: black;">
+
+                    <gg class="archivo-title" style="padding-left: 25px;">HISTOIRE</gg>
+                    <p class="archivo-text text-center items-center" style="padding-left: 15px; text-align: justify; padding-right: 20px; font-size: 18px;">La <u>Yamaha R1M</u> est une moto de haute performance inspirée directement de la technologie <u>MotoGP</u>. Elle est équipée d’un moteur <u>4 cylindres</u> en ligne de 998 cm³, offrant une puissance impressionnante et une accélération fulgurante. Ce qui la distingue vraiment, c’est sa panoplie d’électroniques avancées : suspension électronique <u>Öhlins</u>, contrôle de traction, anti-wheeling, et <u>centrale inertielle 6 axes</u> pour une gestion ultra-précise du comportement en virage. Le carénage en fibre de <u>carbone</u> et les aides à la conduite en font une machine aussi performante que sophistiquée. Elle est conçue pour les pilotes exigeants, aussi bien sur piste que sur route.</p>
+
+                  </div>
+                </div>
+              </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <div class="terminal" id="terminal" style="font-family: monospace;">
+        <div class="terminal-header" id="terminal-header">
+            <span>Calculatrice</span>
+            <div class="close-btn" id="close-btn">×
+                
+            </div>
+        </div>
+    
+        <div class="terminal-body">
+    
+        </div>
+        
+    </div>
+
+
+    
+
+    <div id="terminal-graphe" class="terminal-graphe" style="width: 350px; height: 390px; font-family: monospace;">
+        <div id="terminal-header-graphe" class="terminal-header-graphe">
+            <span>Terminal</span>
+            <div id="close-btn-graphe" class="close-btn-graphe">×</div>
+        </div>
+        <div class="terminal-body-graphe">
+            <div id="screen" class="screen text-right p-3 text-2xl bg-base-300 rounded mb-5 h-12" style="border: 1px solid #00ff9f; color: #00ff9f; ;"></div>
+            
+            <div class="buttons-grid" style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px;">
+                <button onclick="appendValue('7')" class="btn" style="padding: 10px;">7</button>
+                <button onclick="appendValue('8')" class="btn" style="padding: 10px;">8</button>
+                <button onclick="appendValue('9')" class="btn" style="padding: 10px;">9</button>
+                <button onclick="appendValue('/')" class="btn" style="padding: 10px;">÷</button>
+                <button onclick="appendValue('4')" class="btn" style="padding: 10px;">4</button>
+                <button onclick="appendValue('5')" class="btn" style="padding: 10px;">5</button>
+                <button onclick="appendValue('6')" class="btn" style="padding: 10px;">6</button>
+                <button onclick="appendValue('*')" class="btn" style="padding: 10px;">×</button>
+                <button onclick="appendValue('1')" class="btn" style="padding: 10px;">1</button>
+                <button onclick="appendValue('2')" class="btn" style="padding: 10px;">2</button>
+                <button onclick="appendValue('3')" class="btn" style="padding: 10px;">3</button>
+                <button onclick="appendValue('-')" class="btn" style="padding: 10px;">−</button>
+                <button onclick="appendValue('0')" class="btn" style="padding: 10px;">0</button>
+                <button onclick="appendValue('.')" class="btn" style="padding: 10px;">.</button>
+                <button onclick="clearScreen()" class="btn btn-error" style="padding: 10px;">C</button>
+                <button onclick="appendValue('+')" class="btn" style="padding: 10px;">+</button>
+            </div>
+            
+            <!-- Bouton égal -->
+             <div class="mt-5">
+                <button onclick="calculateResult()" class="btn btn-accent w-full pt-10" style="padding: 10px;">=</button>
+            </div>
+            
+            
+        </div>
+    </div>
+
+
+
+    
+
+    <div class="content-all">
+        <div class="content-navbar">
+            <div class="navblock">
+                <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+                    </div>
+                    <ul
+                        tabindex="0"
+                        class="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
+                        <li><a class="open-btn-graphique jetbrains-mono-nav">Calculatrice</a></li>
+                        <li><a class="open-btn-R1M jetbrains-mono-nav">R1M</a></li>
+                        <li><a class="open-btn-BF open-btn-questionnaire jetbrains-mono-nav">Brute Force</a></li>
+                        <li><a class="open-btn-questionnaire jetbrains-mono-nav">Questionnaire</a></li>
+                        <li><a class="jetbrains-mono-nav" onclick="window.open('https://github.com/minishaa', '_blank')">GitHub</a></li>
+                        <li><a class="jetbrains-mono-nav" onclick="my_modal_2.showModal()">Email</a></li>
+                        <li><a class="jetbrains-mono-nav" onclick="window.open('https://www.linkedin.com/in/arthur-le-coroller-190b412b2/')">LinkedIn</a></li>
+                        <li><a class="jetbrains-mono-nav" onclick="my_modal_1.showModal()">À propos</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="navi">
+                        <ul>
+                            <li><a role="tab" class="tab jetbrains-mono-nav und open-btn-graphique">Calculatrice</a></li>
+                            <li><a role="tab" class="tab jetbrains-mono-nav und open-btn-R1M">R1M</a></li>
+                            <li><a role="tab" class="tab jetbrains-mono-nav und open-btn-BF open-btn-questionnaire">Brute Force</a></li>
+                            <li><a role="tab" class="tab jetbrains-mono-nav und open-btn-questionnaire">Questionnaire</a></li>
+                        </ul> 
+                
+            </div>
+        </div>
+
+
+       
+    
+
+
+
+
+        
+
+
+
+        <div class="plan">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-4 p-4 bg-base-200 rounded-lg shadow-lg" style="background-color: transparent;">
+    
+    <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+      <div class="inner-box">
+        <span class="top"></span>
+        <span class="right"></span>
+        <span class="bottom"></span>
+        <span class="left"></span>
+        <fg class="jetbrains-mono-nav und">CALCULATRICE</fg>
+        <p class="mt-2" style="text-align: justify;">
+            Voici deux types de calculatrices. La première est une calculatrice "terminal", où les opérations se font directement via le clavier. La seconde est une calculatrice classique, avec des boutons sur lesquels il suffit de cliquer. La calculatrice terminale est idéale pour les utilisateurs à l’aise avec le clavier. La version classique, quant à elle, est parfaite pour une prise en main rapide et intuitive. À vous de choisir celle qui vous convient le mieux !
+        </p>
+        <div class="flex flex-col sm:flex-row justify-center gap-10 mt-4">
+            <button class="btn2 tab w-full sm:w-auto" id="open-btn">TERMINALE</button>
+            <button class="btn2 tab w-full sm:w-auto open-btn-graphique">GRAPHIQUE</button>
+        </div>
+          
+        
+      </div>
+    </div>
+
+    <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+        <div class="inner-box">
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+          <fg class="jetbrains-mono-nav und">R1M</fg>
+          <p class="mt-2" style="text-align: justify;">
+                Dans cette catégorie dédiée à la R1M, vous trouverez toutes les spécificités techniques de cette moto d’exception. Elle permet de mieux comprendre ses performances, ses composants et son design unique. C’est aussi l’occasion de retracer son histoire, de sa création à aujourd’hui. Une manière de découvrir tout ce qui fait de la R1M une machine à part. Que vous soyez passionné ou simple curieux, plongez dans l’univers de cette sportive hors normes.          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-2 mt-4">
+              <button class="btn2 tab w-full sm:w-auto open-btn-R1M">SPÉCIFICITÉS</button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+        <div class="inner-box">
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+          <fg class="jetbrains-mono-nav und">QUESTIONNAIRE</fg>
+          <p class="mt-2" style="text-align: justify;">
+            Ce questionnaire vous propose quelques questions sur les spécificités de la R1M. Il vous permet de tester vos connaissances sur cette moto d’exception, de manière simple et ludique. Si vous répondez correctement à l’ensemble des questions, vous serez alors redirigé vers un formulaire de contact. Une belle occasion de montrer que vous connaissez la R1M sur le bout des doigts !          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-2 mt-4">
+              <button class="btn2 tab w-full sm:w-auto open-btn-questionnaire">RÉPONDRE</button>
+          </div>
+          
+        </div>
+      </div>
+
+      <div class="bg-primary rounded-lg shadow-md text-white text-xl font-bold p-4 flex flex-col gap-4" style="background-color: transparent;">
+        <div class="inner-box">
+          <span class="top"></span>
+          <span class="right"></span>
+          <span class="bottom"></span>
+          <span class="left"></span>
+          <fg class="jetbrains-mono-nav und">ALGORITHME BRUTE FORCE</fg>
+          <p class="mt-2" style="text-align: justify;">
+            Dans cette section, on explore l’algorithme de brute force qui teste le questionnaire en essayant de trouver les bonnes réponses à chaque tentative. C’est une façon de voir comment un programme peut tenter différentes combinaisons pour réussir à passer au formulaire de contact. Pas de stress, c’est juste une manière de comprendre comment ces techniques fonctionnent, dans un cadre sécurisé et sans conséquence.          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-2 mt-4">
+              <button class="btn2 tab w-full sm:w-auto open-btn-BF open-btn-questionnaire">BRUTE FORCE</button>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+    </div>
+
+    </div>
+
+    <div class="content-searchbar"></div>
+    <div class="content-navlink">
+        <div class="flex gap-2 sm:gap-4 md:gap-6 lg:gap-8 xl:gap-10">
+            <button class="btn bg-black text-white border-black" onclick="window.open('https://github.com/minishaa', '_blank')">
+                        <svg aria-label="GitHub logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path fill="white" d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+                        </svg>
+                        GitHub
+                    </button>
+                    
+                    <button class="btn bg-black text-white border-[#e5e5e5]" onclick="my_modal_2.showModal()">
+                    <svg aria-label="Email icon" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g stroke-linejoin="round" stroke-linecap="round" stroke-width="2" fill="none" stroke="white"><rect width="20" height="16" x="2" y="4" rx="2"></rect><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path></g></svg>
+                    Email
+                    </button>
+                    
+                    <button class="btn bg-black text-white border-[#0059b3]" onclick="window.open('https://www.linkedin.com/in/arthur-le-coroller-190b412b2/')">
+                    <svg aria-label="LinkedIn logo" width="16" height="16" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path fill="white" d="M26.111,3H5.889c-1.595,0-2.889,1.293-2.889,2.889V26.111c0,1.595,1.293,2.889,2.889,2.889H26.111c1.595,0,2.889-1.293,2.889-2.889V5.889c0-1.595-1.293-2.889-2.889-2.889ZM10.861,25.389h-3.877V12.87h3.877v12.519Zm-1.957-14.158c-1.267,0-2.293-1.034-2.293-2.31s1.026-2.31,2.293-2.31,2.292,1.034,2.292,2.31-1.026,2.31-2.292,2.31Zm16.485,14.158h-3.858v-6.571c0-1.802-.685-2.809-2.111-2.809-1.551,0-2.362,1.048-2.362,2.809v6.571h-3.718V12.87h3.718v1.686s1.118-2.069,3.775-2.069,4.556,1.621,4.556,4.975v7.926Z" fill-rule="evenodd"></path></svg>
+                    LinkedIn
+                    </button>
+
+                    <button class="btn bg-black text-white border-[#f1d800]" onclick="my_modal_1.showModal()">
+                        <svg width="18" height="18" class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                            <path stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7.75 4H19M7.75 4a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 4h2.25m13.5 6H19m-2.25 0a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 10h11.25m-4.5 6H19M7.75 16a2.25 2.25 0 0 1-4.5 0m4.5 0a2.25 2.25 0 0 0-4.5 0M1 16h2.25"/>
+                        </svg>
+                        À propos
+                      </button> 
+        </div>
+    </div>
+         
+    <dialog id="my_modal_1" class="modal">
+        <div class="modal-box">
+          <h3 class="text-lg font-bold" style="font-weight: bold; color: white;">Projet WEB EPITA 2025</h3>
+          <p class="py-4">Ce site a été réalisé par LE COROLLER Arthur</p>
+          <div class="modal-action">
+            <form method="dialog">
+              <button class="btn">Fermer</button>
+            </form>
+        </div>
+      </div>
+      </dialog>  
+
+      <dialog id="my_modal_2" class="modal">
+        <div class="modal-box">
+            <h3 class="text-lg font-bold" style="font-weight: bold; color: white;">Voici mon Email :</h3>
+            <p class="py-4">arthur.le-coroller@epita.fr</p>
+            <div class="modal-action">
+            <form method="dialog">
+                <button class="btn">Fermer</button>
+            </form>
+        </div>
+        </div>
+        </dialog>
+
+    <div class="background">
+        <span class="left-mover"></span> 
+        <span class="search-mover"></span>
+    </div>
+    
+    <script src="src/js/terminalR1M.js"></script>
+
+    <script src="./src/js/terminalgraphiquecalculatrice.js"></script>
+
+    <script src="./src/js/terminalcalculatrice.js"></script>
+
+    <script src="./src/js/terminalbruteforce.js"></script>
+
+    <script src="./src/js/terminalquestionnaire.js"></script>
+
+    <script src="./src/js/script_bruteforce.js"></script>
+
+    <script src="./src/js/questionnaire.js"></script>
+
+
+
+
+
+
+</body>
+</html>
